@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <script defer src="db.json"></script>
+        <script defer src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <title>Filmzoeker</title>
+    </head>
+    <body>
+        <header>
+            <h1>Wulfert's Wilde Filmzoeker</h1>
+        </header>
+        <main>
+            <div id="filters">
+                <h2>Filters:</h2>
+                <p>Kies een categorie of vul zelf een titel in. Gebruik de zoekknop of de Entertoets</p>
+                <nav>
+                    <input type="radio" name="filterFilms" id="cat0" onclick="if(this.checked){klC(this.id)}">Alle films
+                    <input type="radio" name="filterFilms" id="cat1" onclick="if(this.checked){klC(this.id)}">Nieuwste films
+                    <input type="radio" name="filterFilms" id="cat2" onclick="if(this.checked){klC(this.id)}">'Avengers films'
+                    <input type="radio" name="filterFilms" id="cat3" onclick="if(this.checked){klC(this.id)}">'X-Men films'
+                    <input type="radio" name="filterFilms" id="cat4" onclick="if(this.checked){klC(this.id)}">'Princess films'
+                    <input type="radio" name="filterFilms" id="cat5" onclick="if(this.checked){klC(this.id)}">'Batman films'
+                    <input type="text" name="zoekFilms" id="cat6" placeholder="zoek op titel" onfocus="zoekdoorEnter()">
+                    <button type="submit" name="zoekFilms" id="cat7" onclick="zoekKnop()">Zoek</button>
+                </nav>
+            </div>
+            <div id="films">
+            </div>
+        </main>
+        <footer>
+    
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+body{
+    font-family: 'Kalam';
+    background-color:goldenrod;
+}
+header{
+    background-color:brown;
+    padding-left: 20px;
+}
+main{
+    display: grid;
+    width: 100%;
+}
+#films{
+    padding-left: 20px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+#filters{
+    padding-left: 20px;
+    background-color: pink;
+}
